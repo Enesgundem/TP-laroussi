@@ -9,15 +9,15 @@
 <body>
 
   <div class="header">
-    <h1>BOOKING HOTEL</h1> – Indiquez vos dates de réservation – Toute annulation doit se faire 48h avant
+    <h1>BOOKING HOTEL</h1> Indiquez vos dates de réservation  Toute annulation doit se faire 48h avant
   </div>
 
   <div class="container my-4">
     <div class="row justify-content-between">
       
       
-      <div class="col-md-5 form-box">
-        <h4 class="text-center mb-3">France - Étranger</h4>
+      <div class="col-md-5 formulaire-box">
+        <h4 class="text-center mb-3">France Étranger</h4>
         
         <div class="mb-3">
           <label for="lieu" class="form-label">Lieu de séjour</label>
@@ -36,17 +36,17 @@
 
         <div class="mb-3">
           <label for="adultes" class="form-label">Adulte</label>
-          <input type="number" class="form-control" id="adultes" value="" min="">
+          <input type="number" class="form-control" id="adultes" value="" min="0">
         </div>
 
         <div class="mb-3">
           <label for="enfants" class="form-label">Enfant</label>
-          <input type="number" class="form-control" id="enfants" value="" min="">
+          <input type="number" class="form-control" id="enfants" value="" min="0">
         </div>
 
         <div class="mb-3">
           <label for="chambres" class="form-label">Chambre</label>
-          <input type="number" class="form-control" id="chambres" value="" min="">
+          <input type="number" class="form-control" id="chambres" value="" min="0">
         </div>
 
         <button class="btn btn-success w-100 mb-2" onclick="mettreAJour()">Rechercher</button>
@@ -59,29 +59,29 @@
 
         <div class="mb-3">
           <label for="age1" class="form-label">Âge</label>
-          <input type="number" class="form-control" id="age1" value="">
+          <input type="number" class="form-control" id="age1" value="0">
         </div>
 
         <div class="mb-3">
           <label for="age2" class="form-label">Âge</label>
-          <input type="number" class="form-control" id="age2" value="">
+          <input type="number" class="form-control" id="age2" value="0">
         </div>
       </div>
 
-      <!-- Confirmation -->
-      <div class="col-md-6 result-box">
+      
+      <div class="col-md-6 resultat-box">
         <h4 class="mb-3">Confirmation réservation</h4>
-        <p id="res-adultes"></p>
-        <p id="res-enfants"></p>
-        <p id="res-chambres"></p>
-        <p id="res-travail"></p>
+        <p id="reservation-adultes"></p>
+        <p id="reservation-enfants"></p>
+        <p id="reservation-chambres"></p>
+        <p id="reservation-travail"></p>
       </div>
     </div>
   </div>
 
-  <div class="footer">
+  <footer>
     Indiquez vos dates de réservation – Toute annulation doit se faire avant 48h
-  </div>
+  </footer>
 
   <script src="javacript.js"></script>
 </body>

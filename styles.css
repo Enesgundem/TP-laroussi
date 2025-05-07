@@ -1,36 +1,31 @@
-
 .header{
   text-align: center;
 }
 
 body {
+  background: url(./hotel-595121.jpg);
   background-size: cover;
 }
 
-.overlay {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  font-weight: bold;
-}
-
-.form-box {
-  background-color: rgba(153, 51, 153, 0.9);
+.formulaire-box {
+  background-color: #1f3255;
   border-radius: 10px;
   padding: 20px;
   color: white;
 }
 
-.result-box {
-  background-color: rgba(191, 160, 255, 0.9);
+.resultat-box {
+  background-color: #1f3255;
   border-radius: 10px;
   padding: 20px;
-  color: #330066;
+  color: #ffffff;
+  text-align: center;
 }
 
-.footer {
+footer{
   text-align: center;
-  background-color: darkred;
-  color: yellow;
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
   padding: 10px;
   font-weight: bold;
 }

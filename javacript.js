@@ -4,16 +4,16 @@ function mettreAJour() {
   const nbChambres = document.getElementById("chambres").value;
   const travail = document.getElementById("travail").checked;
 
-  document.getElementById("res-adultes").textContent = "Nombre d’adultes : " + nbAdultes;
-  document.getElementById("res-enfants").textContent = "Nombre d’enfants : " + nbEnfants;
-  document.getElementById("res-chambres").textContent = "Nombre de chambres : " + nbChambres;
-  document.getElementById("res-travail").textContent = "Voyage professionnel : " + (travail ? "Oui" : "Non");
+  document.getElementById("reservation-adultes").textContent = "Nombre d’adultes : " + nbAdultes;
+  document.getElementById("reservation-enfants").textContent = "Nombre d’enfants : " + nbEnfants;
+  document.getElementById("reservation-chambres").textContent = "Nombre de chambres : " + nbChambres;
+  document.getElementById("reservation-travail").textContent = "Voyage professionnel : " + (travail ? "Oui" : "Non");
 }
 
 function resetForm() {
-  document.getElementById("lieu").value = "Paris";
-  document.getElementById("arrivee").value = "2025-05-08";
-  document.getElementById("depart").value = "2025-05-11";
+  document.getElementById("lieu").value = "";
+  document.getElementById("arrivee").value = "";
+  document.getElementById("depart").value = "";
   document.getElementById("adultes").value = 0;
   document.getElementById("enfants").value = 0;
   document.getElementById("chambres").value = 0;
@@ -21,8 +21,8 @@ function resetForm() {
   document.getElementById("age1").value = "";
   document.getElementById("age2").value = "";
 
-  document.getElementById("res-adultes").textContent = "";
-  document.getElementById("res-enfants").textContent = "";
-  document.getElementById("res-chambres").textContent = "";
-  document.getElementById("res-travail").textContent = "";
+  document.getElementById("reservation-adultes").textContent = "";
+  document.getElementById("reservation-enfants").textContent = "";
+  document.getElementById("reservation-chambres").textContent = "";
+  document.getElementById("reservation-travail").textContent = "";
 }
