@@ -1,3 +1,8 @@
+
+.header{
+  text-align: center;
+}
+
 body {
   background-size: cover;
 }
@@ -23,6 +28,7 @@ body {
 }
 
 .footer {
+  text-align: center;
   background-color: darkred;
   color: yellow;
   padding: 10px;
