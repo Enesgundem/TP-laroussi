@@ -1,0 +1,30 @@
+body {
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.form-box {
+  background-color: rgba(153, 51, 153, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+
+.result-box {
+  background-color: rgba(191, 160, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  color: #330066;
+}
+
+.footer {
+  background-color: darkred;
+  color: yellow;
+  padding: 10px;
+  font-weight: bold;
+}

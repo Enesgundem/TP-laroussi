@@ -1,29 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Mon Site</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../boostrap/style.css">
-    </head>
-    <body>
-        <section class="container">
-            <div class="row">
-                <div class = "col-2 bg-success"><h1>Logo</h1></div>
-                <div class = "col-4 bg-info"><h1>Texte</h1></div>
-            </div>
-            <div class="row">
-                <div class = "col-2 bg-success"><h3>Liste de séjour</h3></div>
-                <div class = "col-4 bg-info"><input type="text"></div>
-            </div>
-            <div class="row">
-                <div class = "col-2 bg-success"><h3>Arrivé</h3>
-                <input type="date">
-                </div>
-                <div class = "col-4 bg-success"><h3>Départ</h3>
-                <input type="date">
-                </div>
-            </div>
-        </section>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Booking Hotel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="overlay text-center">
+    <h1>BOOKING HOTEL</h1> – Indiquez vos dates de réservation – Toute annulation doit se faire 48h avant
+  </div>
+
+  <div class="container my-4">
+    <div class="row justify-content-between">
+      
+      
+      <div class="col-md-5 form-box">
+        <h4 class="text-center mb-3">France - Étranger</h4>
+        
+        <div class="mb-3">
+          <label for="lieu" class="form-label">Lieu de séjour</label>
+          <input type="text" class="form-control" id="lieu" value="">
+        </div>
+
+        <div class="mb-3">
+          <label for="arrivee" class="form-label">Arrivée</label>
+          <input type="date" class="form-control" id="arrivee" value="0000-00-00">
+        </div>
+
+        <div class="mb-3">
+          <label for="depart" class="form-label">Départ</label>
+          <input type="date" class="form-control" id="depart" value="000-00-00">
+        </div>
+
+        <div class="mb-3">
+          <label for="adultes" class="form-label">Adulte</label>
+          <input type="number" class="form-control" id="adultes" value="" min="">
+        </div>
+
+        <div class="mb-3">
+          <label for="enfants" class="form-label">Enfant</label>
+          <input type="number" class="form-control" id="enfants" value="" min="">
+        </div>
+
+        <div class="mb-3">
+          <label for="chambres" class="form-label">Chambre</label>
+          <input type="number" class="form-control" id="chambres" value="" min="">
+        </div>
+
+        <button class="btn btn-success w-100 mb-2" onclick="mettreAJour()">Rechercher</button>
+        <button class="btn btn-primary w-100 mb-2" onclick="resetForm()">Effacer</button>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="travail">
+          <label class="form-check-label" for="travail">Je voyage pour le travail</label>
+        </div>
+
+        <div class="mb-3">
+          <label for="age1" class="form-label">Âge</label>
+          <input type="number" class="form-control" id="age1" value="">
+        </div>
+
+        <div class="mb-3">
+          <label for="age2" class="form-label">Âge</label>
+          <input type="number" class="form-control" id="age2" value="">
+        </div>
+      </div>
+
+      <!-- Confirmation -->
+      <div class="col-md-6 result-box">
+        <h4 class="mb-3">Confirmation réservation</h4>
+        <p id="res-adultes"></p>
+        <p id="res-enfants"></p>
+        <p id="res-chambres"></p>
+        <p id="res-travail"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer text-center">
+    Indiquez vos dates de réservation – Toute annulation doit se faire avant 48h
+  </div>
+
+  <script src="javacript.js"></script>
+</body>
 </html>
