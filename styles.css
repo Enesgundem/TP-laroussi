@@ -34,12 +34,10 @@ footer{
   font-weight: bold;
 }
 
-/* Styles pour les champs d'âge */
 .age-input {
   margin-top: 5px;
 }
 
-/* Amélioration de l'affichage de la confirmation */
 .resultat-box p {
   background-color: rgba(255,255,255,0.1);
   padding: 10px;
