@@ -23,9 +23,26 @@ body {
 }
 
 footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
   background-color: rgb(44, 44, 44);
   color: rgb(255, 255, 255);
   padding: 10px;
   font-weight: bold;
+}
+
+/* Styles pour les champs d'âge */
+.age-input {
+  margin-top: 5px;
+}
+
+/* Amélioration de l'affichage de la confirmation */
+.resultat-box p {
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
